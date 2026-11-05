@@ -398,7 +398,7 @@ function animateDemand() {
 function animateDonut() {
   const d = $('donut');
   if (!d) return;
-  const target = 51.6;
+  const target = 64.5;
   if (reduced()) { d.style.setProperty('--p', target); return; }
   const t0 = performance.now();
   const step = (t) => {

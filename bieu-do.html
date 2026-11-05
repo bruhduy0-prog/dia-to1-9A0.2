@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biểu đồ thu nhập theo vùng — Địa lí kinh tế Việt Nam</title>
+<meta name="description" content="Biểu đồ cột thu nhập bình quân đầu người một tháng của sáu vùng kinh tế, 2010–2024. Bấm vào từng cột để xem số liệu của vùng.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="bieu-do">
+
+<div class="phead">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="index.html">Địa lí <span>·</span> Kinh tế Việt Nam</a>
+    </div>
+  </div>
+</div>
+
+<div class="nav-sticky">
+  <div class="wrap">
+    <div class="navbar">
+      <nav class="nav" aria-label="Mục lục">
+        <a href="index.html" data-nav="home">Trang chủ</a>
+        <a href="bieu-do.html" data-nav="bieu-do">Biểu đồ</a>
+        <a href="kiem-tra.html" data-nav="kiem-tra">Kiểm tra</a>
+        <a href="nhan-xet.html" data-nav="nhan-xet">Nhận xét</a>
+        <a href="giai-thich.html" data-nav="giai-thich">Giải thích</a>
+        <a href="viec-lam.html" data-nav="viec-lam">Việc làm</a>
+        <a href="ket-luan.html" data-nav="ket-luan">Kết luận</a>
+      </nav>
+      <span class="pageidx"></span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<!--PAGE:bieu-do-->
+<section class="page active" data-page="bieu-do">
+  <div class="wrap">
+    <div class="ptitle">
+      <h1>Biểu đồ thu nhập theo vùng</h1>
+      <p class="lede">Chọn một năm, rồi bấm vào cột của vùng muốn xem. Vạch đứt ngang mỗi cột là mức thu nhập của vùng đó năm 2010; khoảng cách giữa vạch và đỉnh cột chính là phần tăng thêm sau mười lăm năm.</p>
+    </div>
+    <figure class="chart-figure" id="chartFigure">
+      <div class="chart-top">
+        <h2>Thu nhập bình quân đầu người một tháng theo vùng</h2>
+        <span class="unit">Nghìn đồng/người/tháng · giá hiện hành</span>
+      </div>
+
+      <div class="yearbar">
+        <span class="lbl">Năm</span>
+        <div class="rail" id="yearRail" role="group" aria-label="Chọn năm"></div>
+      </div>
+
+      <div class="plot" id="plot" role="group" aria-label="Biểu đồ cột thu nhập theo vùng. Dùng phím mũi tên để chọn vùng, Enter để mở chi tiết."></div>
+
+      <div class="detail" id="detail" role="region" aria-live="polite" aria-label="Chi tiết vùng đang chọn"></div>
+
+      <div class="chart-note">
+        <span id="chartSrc"><b>Nguồn:</b> Tổng cục Thống kê.</span>
+        <span>Vạch đứt ngang mỗi cột: mức thu nhập của vùng đó năm 2010.</span>
+      </div>
+    </figure>
+
+    <div class="pagenav">
+      <a href="index.html" class="prev"><span class="dir">← Trước</span><span class="ttl">Trang chủ</span></a>
+      <a href="kiem-tra.html" class="next"><span class="dir">Tiếp →</span><span class="ttl">Kiểm tra kiến thức</span></a>
+    </div>
+  </div>
+</section>
+<!--/PAGE-->
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Chuyên đề Địa lí kinh tế Việt Nam</b> · Phân hoá thu nhập theo vùng và việc làm ở Hà Nội</span>
+    <span>Giai đoạn 2010 – 2024</span>
+    <div class="srcbox">
+      <b>Nguồn số liệu.</b> Thu nhập bình quân đầu người một tháng theo vùng: Tổng cục Thống kê, Khảo sát mức sống dân cư, giá hiện hành (đơn vị: nghìn đồng/người/tháng).
+      Thị trường lao động Hà Nội: Trung tâm Dịch vụ việc làm Hà Nội và Sở Nội vụ thành phố Hà Nội, báo cáo tháng 6/2026 và quý II/2026.
+      Tỉ lệ nhóm ngành tuyển dụng cộng lại là 88,0%; phần còn lại (12,0%) không được nêu trong báo cáo và được ghi là “nhóm khác” trong biểu đồ.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+

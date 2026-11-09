@@ -1424,7 +1424,7 @@ body[data-mode="single"] .page{display:block!important}
       <a href="#bieu-do">
         <span class="n">01</span>
         <h2>Biểu đồ thu nhập theo vùng</h2>
-        <p>Sáu vùng kinh tế, hai mốc năm 2010 và 2024. Bấm vào một cột để mở số liệu của vùng đó.</p>
+        <p>Sáu cột, tám mốc năm 2010–2024. Bấm vào một cột để mở số liệu của vùng đó.</p>
       </a>
       <a href="#kiem-tra">
         <span class="n">02</span>
@@ -1911,7 +1911,7 @@ body[data-mode="single"] .page{display:block!important}
       <a href="#bieu-do">
         <span class="n">Xem lại</span>
         <h2>Biểu đồ thu nhập theo vùng</h2>
-        <p>Sáu vùng kinh tế, hai mốc năm 2010 và 2024. Bấm vào cột để đọc số liệu từng vùng.</p>
+        <p>Sáu cột, tám mốc năm 2010–2024. Bấm vào cột để đọc số liệu từng vùng.</p>
       </a>
       <a href="#kiem-tra">
         <span class="n">Ôn tập</span>
@@ -1956,21 +1956,21 @@ body[data-mode="single"] .page{display:block!important}
    --------------------------------------------------------- */
 const DATA = {
   unitLabel: 'nghìn đồng/người/tháng',
-  years: [2010, 2024],
-  source: 'Tính toán từ Kết quả khảo sát mức sống dân cư Việt Nam năm 2010 và năm 2024.',
+  years: [2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024],
+  source: 'Tổng cục Thống kê, Khảo sát mức sống dân cư (giá hiện hành).',
   regions: [
-    { key: 'dbSCL', name: 'Đồng bằng sông Cửu Long', tag: 'ĐBSCL',
-      values: { 2010: 1243, 2024: 4770 } },
-    { key: 'dnb', name: 'Đông Nam Bộ', tag: 'ĐNB',
-      values: { 2010: 2212, 2024: 6868 } },
-    { key: 'tn', name: 'Duyên hải Nam Trung Bộ và Tây Nguyên', tag: 'DHNTB & TN',
-      values: { 2010: 1127, 2024: 4360 } },
-    { key: 'btb', name: 'Bắc Trung Bộ', tag: 'Bắc Trung Bộ',
-      values: { 2010: 903, 2024: 4630 } },
-    { key: 'dbsh', name: 'Đồng bằng sông Hồng', tag: 'ĐBSH',
-      values: { 2010: 1561, 2024: 6480 } },
     { key: 'tdmnpb', name: 'Trung du và miền núi phía Bắc', tag: 'TD&MNPB',
-      values: { 2010: 907, 2024: 3749 } }
+      values: { 2010: 907, 2012: 1258, 2014: 1613, 2016: 1963, 2018: 2452, 2020: 2745, 2022: 3170, 2024: 3749 } },
+    { key: 'dbsh', name: 'Đồng bằng sông Hồng', tag: 'ĐBSH',
+      values: { 2010: 1561, 2012: 2351, 2014: 3265, 2016: 3883, 2018: 4775, 2020: 5084, 2022: 5586, 2024: 6480 } },
+    { key: 'btb', name: 'Bắc Trung Bộ', tag: 'Bắc Trung Bộ',
+      values: { 2010: 903, 2012: 1505, 2014: 1982, 2016: 2358, 2018: 3014, 2020: 3405, 2022: 3967, 2024: 4630 } },
+    { key: 'tn', name: 'Duyên hải Nam Trung Bộ và Tây Nguyên', tag: 'DHNTB & TN',
+      values: { 2010: 1127, 2012: 1643, 2014: 2008, 2016: 2366, 2018: 2895, 2020: 2817, 2022: 3282, 2024: 4360 } },
+    { key: 'dnb', name: 'Đông Nam Bộ', tag: 'ĐNB',
+      values: { 2010: 2212, 2012: 3173, 2014: 4125, 2016: 4662, 2018: 5792, 2020: 6024, 2022: 6334, 2024: 6868 } },
+    { key: 'dbSCL', name: 'Đồng bằng sông Cửu Long', tag: 'ĐBSCL',
+      values: { 2010: 1243, 2012: 1797, 2014: 2327, 2016: 2778, 2018: 3585, 2020: 3874, 2022: 4077, 2024: 4770 } }
   ]
 };
 
